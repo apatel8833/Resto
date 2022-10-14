@@ -1,0 +1,530 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(110, 110, 110);
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+#main{
+    height: 100vh;
+    width: 100%;
+
+}
+#cont{
+    position: absolute;
+    height: 90vh;
+    width: 80%;
+    left: 10%;
+    top: 5%;
+    background-color: white;
+    border-radius: 10px;
+}
+.ri-menu-line{
+    position: absolute;
+    font-size: 2vw;
+    top: 4%;
+    left: 2%;
+    cursor: pointer;
+
+}
+.nav1{
+    position: absolute;
+    transform: rotate(-90deg);
+    left: -10%;
+    top: 50%;
+
+}
+.nav1>ul{
+    display: flex;
+    list-style: none;
+
+}
+.nav1>ul>li{
+    font-weight: 500;
+    padding-right: 30px;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+.nav2{
+    position: absolute;
+    left: 40%;
+
+}
+.nav2>ul{
+    display: flex;
+    list-style: none;
+}
+.nav2>ul>li{
+    padding: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.nav2>ul>li:hover{
+    color: rgb(255, 0, 43);
+}
+.foodbar{
+    position: absolute;
+    height: 55vh;
+    width: 27%;
+    background-color: black;
+    left: 10%;
+}
+.foodbar>h1{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.foodbar>.foodimg{
+    position: absolute;
+    height: 24vw;
+    width: 24vw;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.foodimg>img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.detail{
+    position: absolute;
+    width: 30vw;
+    height: 11vw;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 45%;
+    left: 63%;
+    transform: translate(-50%,-50%);
+
+}
+.foodname{
+    font-size: 3vw;
+    font-weight: bold;
+
+}
+p{
+    width: 25vw;
+    font-size: 0.9vw;
+    font-weight: bold;
+}
+.price{
+    font-size: 2vw;
+    font-weight: bold;
+    color: rgb(255, 0, 43);
+}
+button{
+    position: absolute;
+    padding: 5px 15px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    top: 57%;
+    cursor: pointer;
+    left: 55%;
+
+}
+#menu{
+    position: absolute;
+    height: 30vh;
+    width: 80%;
+    left: 10%;
+    bottom: 0%;
+    /* border: 1px solid black; */
+    white-space: nowrap;
+    padding: 2px;
+    overflow-x: auto;
+    cursor: pointer;
+
+}
+.menu{
+    position: relative;
+    height: 80%;
+    width: 15vw;
+    top: 10%;
+    margin-left: 20px;
+    display: inline-block;
+    background-color: black;
+    border-radius: 10px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.menu>img{
+    position: absolute;
+    height: 8vw;
+    width: 8vw;
+    top: -15%;
+    left: -11%;
+    object-fit: cover;
+    object-position: center;
+
+}
+.menu>.pric{
+    position: absolute;
+    color: white;
+    top: 15%;
+    right: 15%;
+    font-size: 2vw;
+}
+.menu>.foodnam{
+    position: absolute;
+    color: white;
+    top: 55%;
+    left: 40%;
+    font-weight: bold;
+    font-size: 1.3vw;
+    transform: translate(-50%);
+}
+.menu>.rating{
+    position: absolute;
+    top: 80%;
+    width: 30%;
+    left: 10%;
+    color: white;
+    display: flex;
+    font-weight: 100;
+    justify-content: space-around;
+
+
+}
+.rating>i{
+    color: yellow;
+}
+.menu>i{
+    position: absolute;
+    font-size: 2vw;
+    color: white;
+    bottom: 5%;
+    right: 10%;
+}
+button::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: 0%;
+    z-index: -1;
+    
+}
+.prof{
+    position: absolute;
+    height: 2.5vw;
+    width: 2.5vw;
+    border-radius: 50%;
+    top: 5%;
+    right: 2%;
+    cursor: pointer;
+}
+.prof>img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+.icons{
+    position: absolute;
+    bottom: 0%;
+    right: 2%;
+    color: rgb(75, 75, 75);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:500px){
+
+    #main{
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+    
+    }
+    #cont{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        background-color: white;
+    }
+    .ri-menu-line{
+        position: absolute;
+        font-size: 2vw;
+        top: 4%;
+        left: 2%;
+        cursor: pointer;
+    
+    }
+    .nav1{
+        position: absolute;
+        transform: rotate(-90deg);
+        left: -18%;
+        top: 50%;
+    
+    }
+    .nav1>ul{
+        display: flex;
+        list-style: none;
+    
+    }
+    .nav1>ul>li{
+        font-weight: 500;
+        padding-right: 30px;
+        font-size: 2vw;
+        cursor: pointer;
+    }
+    .nav2{
+        position: absolute;
+        left: 40%;
+        top: 5%;
+    
+    }
+    .nav2>ul{
+        display: flex;
+        list-style: none;
+    }
+    .nav2>ul>li{
+        padding: 10px;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 3vw;
+    }
+    .nav2>ul>li:hover{
+        color: rgb(255, 0, 43);
+    }
+    .foodbar{
+        position: absolute;
+        height: 40vh;
+        width: 29%;
+        background-color: black;
+        left: 10%;
+    }
+    .foodbar>h1{
+        position: absolute;
+        color: rgb(255, 255, 255);
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 4vw;
+    }
+    .foodbar>.foodimg{
+        position: absolute;
+        height: 35vw;
+        width: 35vw;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .foodimg>img{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .detail{
+        position: absolute;
+        width: 50vw;
+        height: 18vw;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        top: 30%;
+        left: 80%;
+        transform: translate(-50%,-50%);
+    
+    }
+    .foodname{
+        font-size: 5vw;
+        font-weight: bold;
+    
+    }
+    p{
+        width: 25vw;
+        font-size: 1vw;
+        font-weight: bold;
+    }
+    .price{
+        font-size: 4vw;
+        font-weight: bold;
+        color: rgb(255, 0, 43);
+    }
+    button{
+        position: absolute;
+        padding: 5px 10px;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        top: 45%;
+        cursor: pointer;
+        left: 40%;
+    
+    }
+    #menu{
+        position: absolute;
+        height: 30vh;
+        width: 80%;
+        left: 10%;
+        bottom: 10%;
+        /* border: 1px solid black; */
+        white-space: nowrap;
+        padding: 2px;
+        overflow-x: auto;
+        cursor: pointer;
+    
+    }
+    .menu{
+        position: relative;
+        height: 80%;
+        width: 20vw;
+        top: 10%;
+        margin-left: 20px;
+        display: inline-block;
+        background-color: black;
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    .menu>img{
+        position: absolute;
+        height: 15vw;
+        width: 15vw;
+        top: -10%;
+        left: -10%;
+        object-fit: cover;
+        object-position: center;
+    
+    }
+    .menu>.pric{
+        position: absolute;
+        color: white;
+        top: 25%;
+        right: 10%;
+        font-size: 4vw;
+    }
+    .menu>.foodnam{
+        position: absolute;
+        color: white;
+        top: 55%;
+        left: 40%;
+        font-weight: bold;
+        font-size: 2vw;
+        transform: translate(-50%);
+    }
+    .menu>.rating{
+        position: absolute;
+        top: 80%;
+        width: 50%;
+        left: 10%;
+        color: white;
+        display: flex;
+        font-weight: 100;
+        justify-content: space-around;
+    
+    
+    }
+    .rating>i{
+        color: yellow;
+    }
+    .menu>i{
+        position: absolute;
+        font-size: 4vw;
+        color: white;
+        bottom: 5%;
+        right: 5%;
+    }
+    button::before{
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-color: black;
+        top: 0;
+        left: 0%;
+        z-index: -1;
+        
+    }
+    .prof{
+        position: absolute;
+        height: 5vw;
+        width: 5vw;
+        border-radius: 50%;
+        top: 2%;
+        right: 2%;
+        cursor: pointer;
+    }
+    .prof>img{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+    }
+    .icons{
+        position: absolute;
+        bottom: 0%;
+        left: 40%;
+        color: rgb(75, 75, 75);
+        cursor: pointer;
+    }
+    
+}
